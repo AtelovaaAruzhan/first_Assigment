@@ -1,7 +1,7 @@
 public class myaplication {
     public static void main() {
         int[] arr = new int[]{5, 2, 5, 23, 23, 78, 25, 89, 88};
-        int x = binomialCoefficient(arr);
+        int x = binomialCoefficient(7);
         System.out.println(x);
 
     }
