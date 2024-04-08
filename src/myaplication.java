@@ -122,6 +122,7 @@ public class myaplication {
   //     * @param number The initial digit to be raised to a power.
   //     * @param degree The exponent to where the base number is raised.
   //     * @return The result of raising the initial digit to the given power.
+
   //     */
     public static int pow(int number, int degree, int result) {
         if (degree == 0) {
