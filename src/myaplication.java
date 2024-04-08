@@ -1,7 +1,7 @@
 public class myaplication {
     public static void main() {
         int[] arr = new int[]{5, 2, 5, 23, 23, 78, 25, 89, 88};
-        int x = binomialCoefficient(7);
+        int x = gcd(7);
         System.out.println(x);
 
     }
@@ -97,6 +97,16 @@ public class myaplication {
             return binomialCoefficient(n - 1, k - 1) + binomialCoefficient(n - 1, k);
         }
     }
+    public static int gcd(int a, int b) {
+
+        if (b == 0) {
+            return a;
+        }
+
+
+        return gcd(b, a % b);
+    }
+
 
 
 
