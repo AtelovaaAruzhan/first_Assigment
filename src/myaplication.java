@@ -1,7 +1,7 @@
 public class myaplication {
     public static void main() {
         int[] arr=new int[] {5,2,5,23,23,78,25,89,88};
-                int x=factorial(7);
+                int x=fibonacciSequence(7);
         System.out.println(x);
 
     }
@@ -50,6 +50,14 @@ public class myaplication {
         }
         return result;
     }
+    public static int fibonacciSequence(int number) {
+        if (number <= 1) {
+            return number;
+        }
+
+        return fibonacciSequence(number - 1) + fibonacciSequence(number - 2);
+    }
+
 
 
 
