@@ -114,6 +114,15 @@ public class myaplication {
 
 
     }
+  // /**
+  //     * This code find the power of a input digit .
+  //     * The method recursively multiplies the digit by itself until needable power.
+  //     * Time complexity: O(n), where n is starting point.
+  //     * The method makes a digit of recursive calls equal to the degree.
+  //     * @param number The initial digit to be raised to a power.
+  //     * @param degree The exponent to where the base number is raised.
+  //     * @return The result of raising the initial digit to the given power.
+  //     */
     public static int pow(int number, int degree, int result) {
         if (degree == 0) {
             return result;
