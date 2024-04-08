@@ -3,6 +3,7 @@ public class myaplication {
         int[] arr=new int[] {5,2,5,23,23,78,25,89,88};
                 int x=minValue(arr);
         System.out.println(x);
+
     }
 
     public static int minValue(int[] array) {
