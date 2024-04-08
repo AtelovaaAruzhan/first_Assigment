@@ -1,7 +1,7 @@
 public class myaplication {
     public static void main() {
         int[] arr = new int[]{5, 2, 5, 23, 23, 78, 25, 89, 88};
-        boolean x = isDigit(5);
+        int x = binomialCoefficient(arr);
         System.out.println(x);
 
     }
@@ -88,6 +88,16 @@ public class myaplication {
         }
         return Character.isDigit(s.charAt(index)) && isDigit(s, index + 1);
     }
+    public static int binomialCoefficient(int n, int k) {
+        if (n == k || k == 0) {
+            return 1;
+        } else if (k > n / 2) {
+            return binomialCoefficient(n, n - k);
+        } else {
+            return binomialCoefficient(n - 1, k - 1) + binomialCoefficient(n - 1, k);
+        }
+    }
+
 
 
 
