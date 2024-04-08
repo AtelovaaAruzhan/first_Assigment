@@ -1,7 +1,7 @@
 public class myaplication {
     public static void main() {
-        int[] arr=new int[] {5,2,5,23,23,78,25,89,88};
-                int x=fibonacciSequence(7);
+        int[] arr = new int[]{5, 2, 5, 23, 23, 78, 25, 89, 88};
+        int x = pow(arr);
         System.out.println(x);
 
     }
@@ -26,6 +26,7 @@ public class myaplication {
         }
         return (double) sum / count;
     }
+
     public static boolean isPrime(int n) {
         if (n <= 1) {
             return false;
@@ -39,6 +40,7 @@ public class myaplication {
 
         return true;
     }
+
     public static int factorial(int n) {
         if (n == 0) {
             return 1;
@@ -50,15 +52,26 @@ public class myaplication {
         }
         return result;
     }
+
     public static int fibonacciSequence(int number) {
         if (number <= 1) {
             return number;
         }
 
         return fibonacciSequence(number - 1) + fibonacciSequence(number - 2);
+
+
+    }
+    public static int pow(int number, int degree, int result) {
+        if (degree == 0) {
+            return result;
+        }
+
+        return pow(number, degree - 1, result * number);
     }
 
-
-
+    public static int pow(int number, int degree) {
+        return pow(number, degree, 1);
+    }
 
 }
