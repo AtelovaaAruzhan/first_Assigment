@@ -1,7 +1,7 @@
 public class myaplication {
     public static void main() {
         int[] arr=new int[] {5,2,5,23,23,78,25,89,88};
-                boolean x=isPrime(7);
+                int x=factorial(7);
         System.out.println(x);
 
     }
@@ -38,6 +38,17 @@ public class myaplication {
         }
 
         return true;
+    }
+    public static int factorial(int n) {
+        if (n == 0) {
+            return 1;
+        }
+
+        int result = 1;
+        for (int i = 2; i <= n; i++) {
+            result *= i;
+        }
+        return result;
     }
 
 
