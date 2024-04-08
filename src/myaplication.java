@@ -46,6 +46,17 @@ public class myaplication {
         }
         return (double) sum / count;
     }
+    // /**
+    //     * This method find out is the given digit is prime or composite.
+    //     * It uses a for cycle.
+    //     * Time complexity: O(sqrt(n)), where n is the  number.
+    //     * For cycle iterates through digits starting from two until to sqrt(n),
+    //     * resulting in square root time complexity.
+    //     *
+    //     * @param n The given digit n, for which the code find out is it prime.
+    //     * @return false if  digit is composite, or true if digit
+    //     *  is composite.
+    //     */
 
     public static boolean isPrime(int n) {
         if (n <= 1) {
