@@ -24,6 +24,17 @@ public class myaplication {
         }
         return currentMinimum;
     }
+    // /**
+    //     * This code calculates the average of an array by summing
+    //     all elements and dividing by the array length
+    //     * It uses a for cycle.
+    //     * Time complexity: O(n), where n length of array.
+    //     * For cycle iterating through the all array then summing everuthing together
+    //     * algorithm divides  by length of an array and find average.
+    //     * The result is linear time complexity.
+    //     * @param array The array of digits and we have to find average.
+    //     * @return average The average digit which created from given array.
+    //     */
 
     public static double averageValue(int[] array) {
         int sum = 0;
