@@ -93,6 +93,17 @@ public class myaplication {
         }
         return result;
     }
+    // /**
+    //     * This method return  n-th element in the Fibonacci sequence.
+    //     * It uses a recursive approach.
+    //     * Time complexity: O(2^n), where n  number.
+    //     * The recursive algorithm use itself for each non-base case,
+    //     * to find out  in exponential time complexity.
+    //     *
+    //     * @param n The index of the digit in the Fibonacci sequence
+    //     *          to be found.
+    //     * @return The input value  in the Fibonacci sequence.
+    //     */
 
     public static int fibonacciSequence(int number) {
         if (number <= 1) {
