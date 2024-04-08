@@ -5,6 +5,15 @@ public class myaplication {
         System.out.println(x);
 
     }
+   // /**
+    //     * This method find the lowest digit from an array.
+    //     * It uses a for loop.
+    //     * Time complexity: O(n), where n array.
+    //     * For cycle  which  iterates all array,
+    //     * resulting in linear time complexity.
+    //     * @param array The array of digits where we have to  find the lowest.
+    //     * @return min The lowest number from array
+    //     */
 
     public static int minValue(int[] array) {
         int currentMinimum = array[0];
