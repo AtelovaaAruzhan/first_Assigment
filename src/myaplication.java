@@ -1,7 +1,7 @@
 public class myaplication {
     public static void main() {
         int[] arr=new int[] {5,2,5,23,23,78,25,89,88};
-                double x=averageValue(arr);
+                boolean x=isPrime(7);
         System.out.println(x);
 
     }
@@ -24,9 +24,22 @@ public class myaplication {
             sum += array[count];
             count++;
         }
-
         return (double) sum / count;
     }
+    public static boolean isPrime(int n) {
+        if (n <= 1) {
+            return false;
+        }
+
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
 
 
 }
