@@ -1,7 +1,7 @@
 public class myaplication {
     public static void main() {
         int[] arr = new int[]{5, 2, 5, 23, 23, 78, 25, 89, 88};
-        int x = reverseSequence(arr);
+        boolean x = isDigit(5);
         System.out.println(x);
 
     }
@@ -82,8 +82,13 @@ public class myaplication {
         int value = sc.nextInt();
         System.out.print(value + " ");
     }
+    public static boolean isDigit(String s, int index) {
+        if (index >= s.length()) {
+            return true;
+        }
+        return Character.isDigit(s.charAt(index)) && isDigit(s, index + 1);
+    }
 
-// ... main method with prompts for input
 
 
 }
