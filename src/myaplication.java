@@ -71,6 +71,16 @@ public class myaplication {
 
         return true;
     }
+    // /**
+    //     * This method give the factorial of the input digit.
+    //     * It uses recursion.
+    //     * Time complexity: O(n), where n is the input number.
+    //     * Using recursion, the method multiplies every digit starting from  n till 1 by calling itself with the parameter n - 1.
+    //     * The result is linear time complexity.
+    //     * @param number The digit which factorial will return.
+    //     * @return factorial The factorial of the input digit.
+    //     */
+
 
     public static int factorial(int n) {
         if (n == 0) {
