@@ -1,7 +1,7 @@
 public class myaplication {
     public static void main() {
         int[] arr = new int[]{5, 2, 5, 23, 23, 78, 25, 89, 88};
-        int x = pow(arr);
+        int x = reverseSequence(arr);
         System.out.println(x);
 
     }
@@ -73,5 +73,17 @@ public class myaplication {
     public static int pow(int number, int degree) {
         return pow(number, degree, 1);
     }
+    public static void reverseSequence(int number) {
+        if (number == 0) {
+            return;
+        }
+
+        reverseSequence(number - 1);
+        int value = sc.nextInt();
+        System.out.print(value + " ");
+    }
+
+// ... main method with prompts for input
+
 
 }
